@@ -29,42 +29,29 @@ function(isConfirm){
 });
   };
 </script>
-    <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <img class="img-fluid d-block" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg">
-        </div>
-        <div class="col-md-1 offset-md-1">
-        <div style="width:1px; height:500px; background-color:black"></div></div>
-        <div class="col-md-4 ">
-          <ul class="nav nav-pills flex-column">
-            <li class="nav-item">
-              <a href="#" class="active nav-link"><i class="fa fa-home fa-home"></i>&nbsp;Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Item</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Item</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <h1 class="text-primary">{{ $blog->title }}</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <p class="lead">{{ $blog->description }}</p>
-          <a class="btn btn-primary" href="#">Read more <i class="fa fa-check fa-fw"></i></a>
-        </div>
-        <div class="col-md-6"></div>
-      </div>
-    </div>
-  </div>
+
+ <div class="col-md-6 ">
+   <img src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg" class="img-fluid">
+ </div>
+ <div class="row">
+   <div class="col-md-6 ">
+     <h1 class="text-primary"><center>{{ $blog->title }}</center></h1>
+     <p class="lead"><center>{{ $blog->description }}</center></p>
+   </div>
+ </div>
+   <li>
+     <a href="/blog/{{$blog->id}}">read more</a>
+   </li>
+   <li>
+     <a href="/blog/{{$blog->id}}/edit">Update</a>
+   </li>
+         <form action="/blog/{{$blog->id}}" method="post">
+    <input onclick="return hapus()" type="submit" name="submit" value="delete">
+    {{ csrf_field()}}
+    <input type="hidden" name="_method" value="DELETE">
+   </form><br><hr><br>
+
+
 @endforeach
 
 @endsection

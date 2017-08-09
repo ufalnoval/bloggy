@@ -33,7 +33,7 @@ class BlogController extends Controller
     {
       $this->validate($request, [
         'title'=>'required|min:5',
-        'description'=>'required|min:5|max:100'
+        'description'=>'required|min:5|max:1000'
       ]);
       $blog= new Blog;
       $blog->title= $request->title;

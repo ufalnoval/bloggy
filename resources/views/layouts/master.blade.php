@@ -42,15 +42,43 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="display-1">Title</h1>
+            <h1 class="display-1">Coba Blog</h1>
           </div>
         </div>
       </div>
     </div>
     <hr>
 </header>
+<div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+        @yield('content')
+        </div>
+        <div class="col-md-1 offset-md-1">
+        <div style="width:1px; height:100%; background-color:grey"></div></div>
+        <div class="col-md-4 ">
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a href="#" class="active nav-link">&nbsp;Kategori</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Coretan Mutiara</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Coreatn Puisi</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Coretan Kisah</a>
+            </li>
 
-<center>@yield('content')</center>
+          </ul>
+        </div>
+      </div>
+          </div>
+  </div>
+
+<center></center>
 <footer>
   <div class="py-5">
     <div class="container">
