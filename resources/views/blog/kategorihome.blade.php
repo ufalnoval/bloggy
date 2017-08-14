@@ -3,6 +3,7 @@
 @section('title','Blog Fadhil')
 
 @section('content')
+
 <script>
   function success(){
   swal("Created!", "The Item Created!", "success")
@@ -11,6 +12,12 @@
 <center><h2>Create Di Blog Ini</h2></center>
 <div class="py-5"><div class="container"><div class="row"><div class="col-md-12">
       <div class="form-group">
+      <select name="carlist" form="carform">
+		  <option value="volvo">Pilih Kategori</option>
+		  <option value="volvo">Kata Mutiara</option>
+		  <option value="saab">Kata Puisi</option>
+		  <option value="opel">Kata Kisah</option>
+		</select>
         <label>Masukan Judul</label>
         <form action="/blog" method="post">
         <input type="text" name="title" class="form-control" value="{{old('title')}}" placeholder="Masukan Judul">
@@ -33,4 +40,5 @@
 
 	{{ csrf_field() }}
     </form></div></div></div></div>
+
 @endsection

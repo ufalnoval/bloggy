@@ -38,6 +38,7 @@ class BlogController extends Controller
       $blog= new Blog;
       $blog->title= $request->title;
       $blog->description= $request->description;
+      $blog->gambar=$request->gambar;
       $blog->save();
 
       return redirect('blog');
@@ -66,6 +67,11 @@ class BlogController extends Controller
       $blog->delete();
       return redirect('blog');
 
+    }
+
+    public function kategorihome()
+    {
+      return view('blog.kategorihome');
     }
 
 }

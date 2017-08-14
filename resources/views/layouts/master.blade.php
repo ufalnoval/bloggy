@@ -60,7 +60,7 @@
         <div class="col-md-4 ">
           <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a href="#" class="active nav-link">&nbsp;Kategori</a>
+              <a href="<?php echo url('blog/kategorihome') ?>" class="active nav-link">&nbsp;Kategori</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Coretan Mutiara</a>
