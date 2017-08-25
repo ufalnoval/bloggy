@@ -14,7 +14,7 @@
     <header>
       <nav class="navbar navbar-expand-md navbar-light bg-faded">
         <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Baru!</a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -22,13 +22,13 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Profile</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#">Coretan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Tentang</a>
               </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -42,7 +42,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h1 class="display-1">Coba Blog</h1>
+              <h1 class="display-1">Header</h1>
             </div>
           </div>
         </div>
@@ -71,6 +71,11 @@
                 <li class="nav-item">
                   <a href="<?php echo url('blog/katakisah') ?>" class="nav-link">Coretan Kisah</a>
                 </li>
+                @foreach ($kategori as $item)
+                <li class="nav-item">
+                  <a href="" class="nav-link" value="{{old('nama')}}">{{ $item->nama }}</a>
+                </li>
+                @endforeach
               </ul>
             </div>
           </div>
@@ -108,11 +113,11 @@
               <div class="col-md-6">
                 <h1 class=" pi-item">COMPANY</h1>
                 <p>
-                  <strong>Company name, Inc.</strong>
-                  <br>795 Folsom Ave, Suite 600
-                  <br>San Francisco, CA 94107
+                  <strong>Fadhil Blog, Inc.</strong>
+                  <br>1945 Indonesia, merdeka 1202
+                  <br>Cianjur Jago, Cpns 120200
                   <br>
-                <abbr title="Phone">P:</abbr>(123) 456-7890
+                <abbr title="Phone">P :</abbr>(+62) 8772-2837-1991
               </p>
             </div>
             <div class="col-md-6">

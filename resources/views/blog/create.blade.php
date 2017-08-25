@@ -27,7 +27,7 @@ swal("Created!", "The Item Created!", "success")
       <br>
       <input type="text" name="gambar" value="{{old('gambar')}}">
       <br>
-      <input class="success"  type="submit" name="submit" value="Create">
+      <input class="success" onclick="success()"  type="submit" name="submit" value="Create">
       {{ csrf_field() }}
     </form></div></div></div></div>
     @endsection

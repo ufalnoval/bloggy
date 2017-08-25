@@ -10,6 +10,7 @@
 </div></center>
 <h2><center>{{ $blog->title }}</center></h2>
 <center>{{ $blog->description }}</center>
+
 <hr>
 <p>
 </p>

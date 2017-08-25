@@ -12,30 +12,10 @@
 <center><h2>Create Di Blog Ini</h2></center>
 <div class="py-5"><div class="container"><div class="row"><div class="col-md-12">
       <div class="form-group">
-      <select name="carlist" form="carform">
-		  <option value="volvo">Pilih Kategori</option>
-		  <option value="volvo">Kata Mutiara</option>
-		  <option value="saab">Kata Puisi</option>
-		  <option value="opel">Kata Kisah</option>
-		</select>
-        <label>Masukan Judul</label>
+        <label></label>
         <form action="/blog" method="post">
-        <input type="text" name="title" class="form-control" value="{{old('title')}}" placeholder="Masukan Judul">
-        @if($errors->has('title'))
-   		 <p>{{ $errors->first('title') }}</p>
-    	@endif
+        <input type="text" name="nama" class="form-control" value="{{old('nama')}}" placeholder="Masukan Kategori">
       </div>
-      <div class="form-group">
-        <label>Isi Blog</label>
-        <textarea name="description" rows="8" cols="80" class="form-control">
-        {{old('description')}}
-        </textarea>
-        @if($errors->has('description'))
-    <p>{{ $errors->first('description') }}</p>
-    @endif
-    <br>
-  <input type="text" name="gambar" value="{{old('gambar')}}">
-    <br> 
      	<input class="success"  type="submit" name="submit" value="Create">
 
 	{{ csrf_field() }}
