@@ -2,7 +2,7 @@
 @section('title')
 @endsection
 @section('content')
-<p>Welcome To our Blog</p>
+<p><center><u>Welcome To our Blog</u></center></p>
 <p><a href="/blog">Back</a></p>
 <center>
 <div class="col-md-6 ">

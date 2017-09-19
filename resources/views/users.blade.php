@@ -11,7 +11,7 @@
                 <div class="panel-body">
                 <u>
                     <li><a class="nav-link" href="<?php echo url('home') ?>">Blog</a></li>
-                    <li><a class="nav-link" href="<?php echo url('users') ?>">Users</a></li>
+                    <li><a class="nav-link" href="<?php echo url('user') ?>">Users</a></li>
                     <li><a class="nav-link" href="<?php echo url('kategoris') ?>">Kategori</a></li>
                 </u>
                 </div>
